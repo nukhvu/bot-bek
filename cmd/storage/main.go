@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/nukhvu/bot-bek/internal/storage"
+)
 
 func main() {
-	fmt.Println("hello")
+	st := storage.NewStorage()
+
+	fmt.Println("work", st)
 }
