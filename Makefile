@@ -1,3 +1,3 @@
 .PHONY: run 
 run:
-	cmd/storage/main.go
+	go run cmd/storage/main.go
