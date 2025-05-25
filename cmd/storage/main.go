@@ -15,5 +15,9 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println("working:", file)
+	restoredFile, err := st.GetByID(file.ID)
+
+	fmt.Println(st.Files)
+
+	fmt.Println("working:", restoredFile)
 }
